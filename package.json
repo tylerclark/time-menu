@@ -1,0 +1,38 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "description": "Time Tracker for Clark Interactive",
+  "main": "index.js",
+  "build": {
+    "appId": "com.clarkinteractive.time",
+    "productName": "Time Tracker",
+    "icon": "icon512.icns",
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "menubar": "^9.5.1"
+  },
+  "devDependencies": {
+    "electron": "^35.2.1",
+    "electron-builder": "^26.0.12"
+  }
+}
