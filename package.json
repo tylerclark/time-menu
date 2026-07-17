@@ -1,17 +1,19 @@
 {
   "name": "time-tracker",
   "version": "1.0.0",
-  "description": "Time Tracker for Clark Interactive",
+  "description": "TimeTracker.dev",
   "main": "index.js",
   "build": {
-    "appId": "com.clarkinteractive.time",
+    "appId": "com.timetracker.dev",
     "productName": "Time Tracker",
     "icon": "icon512.icns",
+    "afterPack": "scripts/adhoc-sign.js",
     "files": [
       "**/*"
     ],
     "mac": {
-      "category": "public.app-category.productivity"
+      "category": "public.app-category.productivity",
+      "identity": null
     },
     "win": {
       "target": "nsis"

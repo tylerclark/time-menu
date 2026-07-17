@@ -2,7 +2,7 @@ const { menubar } = require("menubar");
 const path = require("path");
 
 const mb = menubar({
-  index: "https://time.clarkinteractive.com?special=1",
+  index: "https://timetracker.dev/app?special=1",
   icon: path.join(__dirname, "icon@2x.png"),
   browserWindow: {
     width: 700,
